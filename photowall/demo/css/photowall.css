@@ -1,0 +1,64 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-image: url(../img/wood.jpg);
+}
+.wrapper {
+	cursor: pointer;
+}
+.wrapper div {
+	position: absolute;
+	top: -3000px;
+	background-repeat: no-repeat;
+	background-color: #fff;
+	outline: 1px solid #BFB6B6;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	-webkit-transition: -webkit-transform 1.2s;
+	-moz-transition: -webkit-transform 1.2s;
+	-o-transition: -o-transform 1.2s;
+	transition: transform 1.2s;
+}
+.wrapper div:hover {
+	z-index: 10;
+	-webkit-transform: rotate(0deg) scale(1.5) !important;
+	-ms-transform: rotate(0deg) scale(1.5) !important;
+	-o-transform: rotate(0deg) scale(1.5) !important;
+	transform: rotate(0deg) scale(1.5) !important;
+}
+.wrapper div img {
+	outline: 1px solid #BFB6B6;
+}
+.loading{
+	position: fixed;
+	bottom: 50%;
+	right: 50%;
+	width: 70px;
+	height: 70px;
+	background:transparent url(../img/loader.gif) no-repeat center center;
+}
+.img_pre,.img_next {
+	background-color: white;
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+	z-index: 1000;
+	position: fixed;
+	bottom: 50%;
+	cursor: pointer;
+}
+.img_pre:hover,.img_next:hover {
+	outline-color: black;
+}
+.img_pre {
+	left: -50px;
+}
+.img_next {
+	right: -50px;
+}
